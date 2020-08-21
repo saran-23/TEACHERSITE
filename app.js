@@ -12,8 +12,11 @@ app.use('/homepage', (req, res) => {
 
 app.use('/question-bank', (req, res) => {
     return res.sendFile(path.join(__dirname, 'public', 'html', 'question-paper.html'));
+});
+app.use('/adminpage1.html', (req, res) => {
+    return res.sendfile(path.join(__dirname, 'public',
+        'html', 'adminpage1.html '));
 })
-
 app.listen(port, () => {
     console.log(`Server started http://localhost:${port}/homepage`);
 });
