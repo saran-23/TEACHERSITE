@@ -26,7 +26,6 @@
     <!-- Google Web Fonts -->
     <link href="/css/css" rel="stylesheet">
 </head>
-
 <!--script for Dynamic textfield-->
 <script>
     function addFields() {
@@ -39,7 +38,7 @@
             container.appendChild(document.createTextNode(`Section ${i+1} No of questions`));
             var input = document.createElement("input");
             input.type = "text";
-
+            input.name = `n-q-${i}`;
             container.appendChild(input);
             container.appendChild(document.createElement("br"));
 
@@ -248,54 +247,64 @@
         <div class="row ">
 
             <!-- Product Col Starts -->
-            <div class="product-layout col-lg-12 col-md-6 col-sm-6 col-xs-6 " style="margin-left:50px;">
+            <div class="product-layout col-lg-11 col-md-6 col-sm-8 col-xs-7">
                 <!-- Product Module Starts -->
                 <div class="product-thumb module-product animation rounded-3 ">
-                    <form>
+                    <form method="GET" action="/">
                         <div class="form-group row">
                             <label for="inputEmail5" class="col-sm-2 col-form-label">Subject Name</label>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control" id=" " placeholder="Enter the Subject Name here">
+                                <input type="text" class="form-control" name="subject-name" placeholder="Enter the Subject Name here">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputEmail5" class="col-sm-2 col-form-label">Subject Code</label>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control" id=" " placeholder="Enter the Subject Code here">
+                                <input type="text" class="form-control" name="subject-code" placeholder=" Enter the Subject Code here ">
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="inputEmail5" class="col-sm-2 col-form-label">Maximum Hours</label>
-                            <div class="col-sm-5">
-                                <input type="email" class="form-control" id=" " placeholder="Enter the Time in Hours">
+                        <div class="form-group row ">
+                            <label for="inputEmail5 " class="col-sm-2 col-form-label ">Maximum Hours</label>
+                            <div class="col-sm-5 ">
+                                <input type="number" class="form-control " name="hrs" placeholder="Enter the Time in Hours ">
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <label for="inputEmail5" class="col-sm-2 col-form-label">Maximum Marks</label>
-                            <div class="col-sm-5">
-                                <input type="email" class="form-control" id=" " placeholder="Enter the Marks here">
+                        <div class="form-group row ">
+                            <label for="inputEmail5 " class="col-sm-2 col-form-label ">Maximum Marks</label>
+                            <div class="col-sm-5 ">
+                                <input type="number" class="form-control " name="max-mark" placeholder="Enter the Marks here ">
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label for="inputEmail5" class="col-sm-2 col-form-label">Number of Sections</label>
-                            <div class="col-sm-5">
-                                <input type="text" id="part" name="member" value="" class="form-control" placeholder="Enter the No.of Section here">
 
-                                <div class="form-group row">
-                                    <div class="col-sm-5">
-                                        <a href="#" id="filldetails" onclick="addFields()">ADD</a>
+                        <div class="form-group row ">
+                            <label for="inputEmail5 " class="col-sm-2 col-form-label ">No.Of Files</label>
+                            <div class="col-sm-5 ">
+                                <input id="file-input" type="file" multiple>
+                                <div id="preview"></div>
+                            </div>
+                        </div>
+                        <div class="form-group row ">
+                            <label for="inputEmail5 " class="col-sm-2 col-form-label ">Number of Sections</label>
+                            <div class="col-sm-5 ">
+                                <input type="text " id="part" name="n-sections" class="form-control " placeholder="Enter the No.of Section here ">
+
+                                <div class="form-group row ">
+                                    <div class="col-sm-5 ">
+                                        <a href="# " id="filldetails " onclick="addFields() ">ADD</a>
                                         <div id="container" />
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
                 </div>
 
-                <div class="form-group row">
-                    <div class="col-sm-5" style="text-align:center">
-                        <button type="submit" class="btn btn-primary">Next</button>
+                <div class="form-group row ">
+                    <div class="col-sm-5 " style="text-align:center ">
+                        <button type="submit " class="btn btn-primary ">Next</button>
                     </div>
                 </div>
 
@@ -340,6 +349,41 @@
     </div>
     </div>
 
+    <!--Script for image upload-->
+    <script>
+        function previewImages() {
+
+            var preview = document.querySelector('#preview');
+
+            if (this.files) {
+                [].forEach.call(this.files, readAndPreview);
+            }
+
+            function readAndPreview(file) {
+
+                // Make sure `file.name` matches our extensions criteria
+                if (!/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                    return alert(file.name + " is not an image");
+                } // else...
+
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function() {
+                    var image = new Image();
+                    image.height = 100;
+                    image.title = file.name;
+                    image.src = this.result;
+                    preview.appendChild(image);
+                });
+
+                reader.readAsDataURL(file);
+
+            }
+
+        }
+
+        document.querySelector('#file-input').addEventListener("change", previewImages);
+    </script>
 </body>
 
 </html>
