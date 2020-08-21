@@ -45,8 +45,6 @@ h6 {
 
 a {
     color: #f55d2c;
-    ;
-    ;
 }
 
 a:hover,
@@ -174,8 +172,6 @@ input[type="color"].form-control {
 .btn-default.disabled,
 .btn-default[disabled] {
     background: #f55d2c;
-    ;
-    ;
     border: none;
 }
 
@@ -948,8 +944,6 @@ hr {
 .module-product-price {
     margin-top: 5px;
     color: #f55d2c;
-    ;
-    ;
     font-size: 18px;
     font-weight: bold;
 }
@@ -982,8 +976,6 @@ hr {
     font-weight: 500;
     text-transform: capitalize;
     background: #f55d2c;
-    ;
-    ;
     border: none;
 }
 
@@ -2187,16 +2179,15 @@ a.list-group-item::before,
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     transition: all 1s ease;
+    color: #1c1c1c;
+    font-weight: 500;
 }
 
-color: #1c1c1c;
-font-weight: 500;
-
-}
 .list-style-1 li:before {
     content: "\f101";
     margin-right: 8px;
 }
+
 .list-style-1 li:hover:before,
 .list-style-1 li:focus:before,
 .list-style-1 li a:hover,
@@ -2205,20 +2196,26 @@ font-weight: 500;
     ;
     ;
 }
+
 .list-style-1 li a:hover,
 .list-style-1 li a:focus {
     text-decoration: underline;
 }
+
 .list-style-1 ul {
     list-style: none;
 }
 
+
 /* Form Styles Starts */
+
 #content .form-control {
     border: 1px solid #c4c4c4;
 }
 
+
 /* Pagination Styles Starts */
+
 .pagination-wrap {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -2227,14 +2224,17 @@ font-weight: 500;
     background: #fff;
     border: 1px solid #e9e9e9;
 }
+
 .results {
     padding-top: 10px;
     padding-left: 15px;
     color: #1c1c1c;
 }
+
 .pagination {
     margin: 8px 0 0;
 }
+
 .pagination>li>a,
 .pagination>li>span {
     padding: 5px 8px;
@@ -2243,10 +2243,12 @@ font-weight: 500;
     background: none;
     border: none;
 }
+
 .pagination>li+li a,
 .pagination>li+li span {
     margin-left: 8px;
 }
+
 .pagination>li:hover>a,
 .pagination>li:hover>span,
 .pagination>li:focus>a,
@@ -2263,6 +2265,7 @@ font-weight: 500;
     ;
     ;
 }
+
 .pagination>li.active>a,
 .pagination>li.active>span,
 .pagination>li.active:hover>a,
@@ -2273,6 +2276,7 @@ font-weight: 500;
     ;
     ;
 }
+
 .pagination>li:hover>a,
 .pagination>li:hover>span,
 .pagination>li:focus>a,
@@ -2289,44 +2293,55 @@ font-weight: 500;
     outline: none;
 }
 
+
 /* Footer Styles Starts */
+
 .main-footer {
     margin-top: 15px;
     padding-top: 25px;
     padding-bottom: 35px;
     border-top: 1px solid #dbdbdb;
 }
+
 .foot-col-head {
     margin-bottom: 20px;
     font-size: 20px;
 }
+
 .footer-links {
     margin-bottom: 20px;
 }
+
 .footer-links li {
     margin-top: 6px;
 }
+
 .footer-contact-links li {
     margin-bottom: 12px;
 }
+
 .footer-links li,
 .footer-links li a,
 .footer-contact-links li {
     color: #484848;
 }
+
 .footer-links li::before {
     content: "\f0da";
 }
+
 .footer-links li::before,
 .footer-contact-links .fa {
     margin-right: 6px;
 }
+
 .footer-links li a:hover,
 .footer-links li a:focus,
 .footer-contact-links li a:hover,
 .footer-contact-links li a:focus {
     text-decoration: underline;
 }
+
 .footer-links li a:hover,
 .footer-links li a:focus,
 .footer-links li::before,
@@ -2336,33 +2351,42 @@ font-weight: 500;
     ;
     ;
 }
+
 .footer-contact-links .fa-map-marker {
     font-size: 18px;
 }
+
 .footer-contact-links .fa-phone {
     font-size: 16px;
 }
 
+
 /* Copyright Styles Starts */
+
 .copyright {
     padding-top: 20px;
     padding-bottom: 20px;
     background: #2c2c2c;
 }
+
 .copyright,
 .copyright a {
     color: #fff;
 }
+
 .copyright-text br {
     display: none;
 }
+
 .copyright-text a:hover,
 .copyright-text a:focus {
     text-decoration: underline;
 }
+
 .copyright ul>li:not(:last-child) {
     padding-right: 14px;
 }
+
 .copyright ul>li a:hover,
 .copyright ul>li a:focus {
     color: #f55d2c;
@@ -2370,83 +2394,106 @@ font-weight: 500;
     ;
 }
 
+
 /* Image Styles Starts */
+
 .img-style-1 {
     padding: 5px;
     border: 1px solid #e9e9e9;
 }
 
+
 /* Generic Styles Starts */
+
 .parallax {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
+
 .hr-1 {
     border-color: #dbdbdb;
 }
+
 .pt-0 {
     padding-top: 0;
 }
+
 .pb-0 {
     padding-bottom: 0;
 }
+
 .pl-0 {
     padding-left: 0;
 }
+
 .pr-0 {
     padding-right: 0;
 }
+
 .mt-0 {
     margin-top: 0;
 }
+
 .mb-0 {
     margin-bottom: 0;
 }
+
 .ml-0 {
     margin-left: 0;
 }
+
 .mr-0 {
     margin-right: 0;
 }
+
 .text-color-brand {
     color: #f55d2c;
     ;
     ;
 }
+
 .font-weight-light {
     font-weight: 300;
 }
+
 .font-weight-normal {
     font-weight: 400;
 }
+
 .font-weight-medium {
     font-weight: 500;
 }
+
 .font-weight-bold {
     font-weight: 700;
 }
+
 .img-center {
     margin-left: auto;
     margin-right: auto;
 }
+
 .rounded-0 {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
+
 .rounded-3,
 .breadcrumb {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
 .rounded-circle {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
 }
+
 a:focus,
 .btn:focus,
 .form-control:focus,
@@ -2454,6 +2501,7 @@ a:focus,
 #menu .btn-navbar:focus {
     outline: none;
 }
+
 .no-boxshadow,
 .btn:focus,
 .form-control:focus,
@@ -2468,6 +2516,7 @@ a:focus,
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
 .font-awesome,
 .breadcrumb li+li::before,
 .carousel-control .icon-prev:before,
@@ -2480,12 +2529,14 @@ a.list-group-item::before,
     src: url('../font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
     src: url('../font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
+
 .animation,
 .animation a {
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
+
 .animation-1,
 .animation-1 a {
     -webkit-transition: all 1s ease;

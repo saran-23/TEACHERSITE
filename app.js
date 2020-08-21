@@ -17,7 +17,7 @@ app.use('/adminpage1', (req, res) => {
     return res.sendFile(path.join(__dirname, 'public', 'html', 'adminpage1.html'));
 });
 app.listen(port, () => {
-    console.log(`Server started http://localhost:${port}/adminpage1`);
+    console.log(`Server started http://localhost:${port}/homepage`);
 });
 
 //  Home, Syllabus, Qb, Materials, QA, Practicals, Video Lectures
