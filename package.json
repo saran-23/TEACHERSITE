@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "-": "0.0.1",
     "express": "^4.17.1",
+    "g": "^2.0.1",
     "gutenberg-web-type": "^1.2.3"
   },
   "devDependencies": {

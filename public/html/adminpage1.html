@@ -281,18 +281,18 @@
                         <div class="form-group row ">
                             <label for="inputEmail5 " class="col-sm-2 col-form-label ">No.Of Files</label>
                             <div class="col-sm-5 ">
-                                <input id="file-input" type="file" multiple>
+                                <input id="file-input" name="file-input" type="file" multiple>
                                 <div id="preview"></div>
                             </div>
                         </div>
                         <div class="form-group row ">
                             <label for="inputEmail5 " class="col-sm-2 col-form-label ">Number of Sections</label>
                             <div class="col-sm-5 ">
-                                <input type="text " id="part" name="n-sections" class="form-control " placeholder="Enter the No.of Section here ">
+                                <input type="text " id="part " name="n-sections " class="form-control " placeholder="Enter the No.of Section here ">
 
                                 <div class="form-group row ">
                                     <div class="col-sm-5 ">
-                                        <a href="# " id="filldetails " onclick="addFields() ">ADD</a>
+                                        <a href="# " id="filldetails" onclick="addFields() ">ADD</a>
                                         <div id="container" />
                                     </div>
                                 </div>
@@ -363,12 +363,12 @@
 
                 // Make sure `file.name` matches our extensions criteria
                 if (!/\.(jpe?g|png|gif)$/i.test(file.name)) {
-                    return alert(file.name + " is not an image");
+                    return alert(file.name + " is not an image ");
                 } // else...
 
                 var reader = new FileReader();
 
-                reader.addEventListener("load", function() {
+                reader.addEventListener("load ", function() {
                     var image = new Image();
                     image.height = 100;
                     image.title = file.name;
@@ -382,7 +382,7 @@
 
         }
 
-        document.querySelector('#file-input').addEventListener("change", previewImages);
+        document.querySelector('#file-input').addEventListener("change ", previewImages);
     </script>
 </body>
 
