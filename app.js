@@ -16,8 +16,12 @@ app.use('/question-bank', (req, res) => {
 app.use('/adminpage1', (req, res) => {
     return res.sendFile(path.join(__dirname, 'public', 'html', 'adminpage1.html'));
 });
+
+app.use('/adminpage2', (req, res) => {
+    return res.sendFile(path.join(__dirname, 'public', 'html', 'adminpage2.html'));
+});
 app.listen(port, () => {
-    console.log(`Server started http://localhost:${port}/homepage`);
+    console.log(`Server started http://localhost:${port}/adminpage2`);
 });
 
 //  Home, Syllabus, Qb, Materials, QA, Practicals, Video Lectures
